@@ -63,7 +63,7 @@ router.get('/', (req, res) => {
     )
       .then(dbTagData => {
         if (!dbTagData) {
-          res.status(404).json({ message: 'Tag Not Found' });
+          res.status(404).json({ message: 'Tag no available / Not found' });
           return;
         }
         res.json(dbTagData);
@@ -83,7 +83,7 @@ router.get('/', (req, res) => {
     })
       .then(dbTagData => {
         if (!dbTagData) {
-          res.status(404).json({ message: 'Tag Not Found' });
+          res.status(404).json({ message: 'Tag no available / Not found' });
           return;
         }
         res.json(dbTagData);
