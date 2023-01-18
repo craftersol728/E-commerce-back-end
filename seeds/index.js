@@ -9,16 +9,16 @@ const seedAll = async () => {
   await sequelize.sync({ force: true });
   console.log('\n----- DATABASE SYNCED -----\n');
   await seedCategories();
-  console.log('\n----- CATEGORIES SEEDED -----\n');
+  console.log('\n----- CATEGORIES LINKED -----\n');
 
   await seedProducts();
-  console.log('\n----- PRODUCTS SEEDED -----\n');
+  console.log('\n----- PRODUCTS IPORTED -----\n');
 
   await seedTags();
-  console.log('\n----- TAGS SEEDED -----\n');
+  console.log('\n----- TAGS CONNECTED -----\n');
 
   await seedProductTags();
-  console.log('\n----- PRODUCT TAGS SEEDED -----\n');
+  console.log('\n----- PRODUCT TAGS REGISTERED -----\n');
 
   process.exit(0);
 };
